@@ -4,13 +4,14 @@ A simple application that adds and displays users
 
 To run the project follow these steps:
 
-Ensure you are running at least version 20.19 or higher of Node.js
-Run npm install in a terminal in the root of the project
-Run npm run dev
-To launch the application on your default browser click here: http://localhost:3000/
+1. Ensure you are running at least version 20.19 or higher of Node.js
+2. Run npm install in a terminal in the root of the project
+3. Run npm run dev
+4. To launch the application on your default browser click here: http://localhost:3000/
 
-For tests:
-Run npm run test
+For tests run:
+
+    npm run test
 
 Decided to use shadcn as a starting point for my components as I've never used it before and works really well with TypeScript and Tailwind CSS. 
 
