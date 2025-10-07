@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useUsers } from "@/lib/context/users-context";
+import { User } from "@/lib/types/user";
 import { Plus } from "lucide-react";
 
 function EmptyState() {
@@ -19,7 +20,7 @@ function EmptyState() {
   );
 }
 
-function UserCard({ user }: { user: any }) {
+function UserCard({ user }: { user: User }) {
   return (
     <Card className="hover:shadow-lg transition-shadow">
       <CardHeader>
@@ -46,7 +47,7 @@ function UserCard({ user }: { user: any }) {
   );
 }
 
-function UsersGrid({ users }: { users: any[] }) {
+function UsersGrid({ users }: { users: User[] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {users.map((user) => (
